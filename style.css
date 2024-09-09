@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calulater {
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(116, 110, 110);
+    box-shadow: 3px 3px 2px rgb(51, 50, 50);
+}
+#display {
+    width: 93%;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    box-shadow: 3px 3px 2px white;
+    color: black;
+    font-size: 1.8rem;
+    outline: none;
+}
+.keys {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 15px;
+}
+button {
+    height: 50px;
+    font-size: 1.8rem;
+    border: none;
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px rgb(49, 48, 48);
+    border-radius: 10px;
+
+}
+#math {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+#math:hover {
+    cursor: pointer;
+    background-color: rgb(224, 205, 27);
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(224, 205, 27);
+    color: white;
+}
+.clear {
+    color: white;
+    background-color: red;
+}
+/* Responsive for Tab */
+@media screen and (max-width:992px) {
+    .calulater {
+        width: 45%;
+    
+    }
+    body {
+        height: 60vh;
+    }
+}
+/* Responsive for Mobile */
+@media screen and (max-width:576px) {
+    .calulater {
+        width: 90%;
+    
+    }
+    body {
+        height: 70vh;
+    }
+}
